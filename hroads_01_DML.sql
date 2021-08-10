@@ -1,5 +1,6 @@
 USE SENAI_HROADS_MANHA;
 GO
+
 INSERT INTO tipoHabilidade
 VALUES ('Ataque'), ('Defesa'), ('Cura'), ('Magia');
 GO
@@ -31,3 +32,11 @@ VALUES (1, 'DeuBug', 100, 80, GETDATE(), '2019-01-18'), (4, 'BitBug', 70, 100, G
 GO
 
 SELECT * FROM personagem
+
+UPDATE personagem
+SET nome = 'Fer7'
+WHERE idPersonagem = 3
+
+UPDATE classe
+SET nomeClasse = 'Necromancer'
+WHERE idClasse = 5
